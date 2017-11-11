@@ -1,15 +1,17 @@
+"""
 import scrapy
 
-class QuotesSpider(scrapy.Spider):
+class ProductsSpider(scrapy.Spider):
     name = "products"
     start_urls = [
         'https://www.macys.com/shop/product/hotel-collection-finest-modal-robe-luxury-turkish-cotton-created-for-macys?ID=1591625&CategoryID=51483',
     ]
 
     def parse(self, response):
-        for product_name in response.css('.columns.small-16'):
+        for product_name in response.css('div.productTitle'):
             yield {
                 'product_name': product_name.css('.productName::text').extract_first()
+                # product_name.css('.productName::text').extract_first()
             }
 
 
@@ -21,3 +23,4 @@ class QuotesSpider(scrapy.Spider):
     #     yield {
     #         'product_name': response.css('.productName::text').extract_first()
     #     }
+"""

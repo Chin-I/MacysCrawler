@@ -1,3 +1,4 @@
+"""
 import scrapy
 
 
@@ -24,3 +25,4 @@ class AuthorSpider(scrapy.Spider):
             'birthdate': extract_with_css('.author-born-date::text'),
             'bio': extract_with_css('.author-description::text'),
         }
+"""
