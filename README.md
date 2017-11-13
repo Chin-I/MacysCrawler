@@ -28,11 +28,11 @@ Put this ipnnb unter ~//MacysCrawler/tutorial/tutorial/spiders/
 Execute!
 
 (..)Futher Improvement(..)
-1.Using Parallel Idea speedup the result.
-2.Using DataBase avoid duplicate result.
-3.To scalable to other websites, the Step1-1 to Step 1-3 process may be different to different websites.
-4.Optimized the crawler config.
-5.Solve duplicate issue.
+1.Using Parallel Idea speedup the result.Easy idea is separate 13 crawler for big category link.
+2.Using DataBase avoid duplicate result. To avoid racing condition problem.
+3.To scalable to other websites. May simply search all html but without duplicate.
+4.Optimized the crawler config. To avoid denied access, using differen user agent.
+5.Solve duplicate issue.For this version, simple python set is a good idea.
 
 2017.11/10 edited
 (..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)
