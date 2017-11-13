@@ -21,7 +21,7 @@ Level 4  product url(with category ID,and product ID),ex:https://www.macys.com/s
 PS:the class productName is unique and only in the product url
 
 (..)Executeive Process(..)
-Tool:https://scrapy.org/
+Tool:https://scrapy.org/ , Python3
 Create a folder
 >> scrapy startproject tutorial
 Put this ipnnb unter ~//MacysCrawler/tutorial/tutorial/spiders/
