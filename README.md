@@ -31,7 +31,8 @@ Execute!
 1.Using Parallel Idea speedup the result.
 2.Using DataBase avoid duplicate result.
 3.To scalable to other websites, the Step1-1 to Step 1-3 process may be different to different websites.
-4.Optimized the crawler config
+4.Optimized the crawler config.
+5.Solve duplicate issue.
 
 2017.11/10 edited
 (..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)
