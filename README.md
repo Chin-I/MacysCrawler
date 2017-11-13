@@ -1,11 +1,37 @@
 # MacysCrawler
 Crawl all the product name under Macys
 
-
 2017.11/13 edited.
 Integrated all code to jupyter version.
 file name:/MacysCrawler/tutorial/tutorial/spiders/MacysSpider.ipynb
 product name Result:/MacysCrawler/tutorial/tutorial/spiders/out-macys-productname.txt
+
+
+(..)  Crawling Result (..)
+Crawl Product Numeber: #25,631  2% (I was banned by Macys.com)
+Rough answer is  1,248,000 = 13(Big Category-fob)*40(small category-header)*2400(60item*40pages)
+Crawl Hierarchyly from top to down. 
+Only problem is the spider, robot, internet issue.
+
+(..)  Crawling Analysis  (..)
+Level 1  main url,ex: http://www.macys.com
+Level 2  fobs url (13 main category),ex:https://www.macys.com/shop/womens-clothing 
+Level 3  headers url (`0~100 detail category of main category),ex:https://www.macys.com/shop/womens-clothing/womens-activewear
+Level 4  product url(with category ID,and product ID),ex:https://www.macys.com/shop/product/ideology-cowl-neck-pullover-created-for-macys?ID=4812536&CategoryID=29891
+PS:the class productName is unique and only in the product url
+
+(..)Executeive Process(..)
+Tool:https://scrapy.org/
+Create a folder
+>> scrapy startproject tutorial
+Put this ipnnb unter ~//MacysCrawler/tutorial/tutorial/spiders/
+Execute!
+
+(..)Futher Improvement(..)
+1.Using Parallel Idea speedup the result.
+2.Using DataBase avoid duplicate result.
+3.To scalable to other websites, the Step1-1 to Step 1-3 process may be different to different websites.
+4.Optimized the crawler config
 
 2017.11/10 edited
 (..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)
