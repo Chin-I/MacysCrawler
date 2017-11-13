@@ -1,6 +1,13 @@
 # MacysCrawler
 Crawl all the product name under Macys
 
+
+2017.11/13 edited.
+Integrated all code to jupyter version.
+file name:/MacysCrawler/tutorial/tutorial/spiders/MacysSpider.ipynb
+product name Result:/MacysCrawler/tutorial/tutorial/spiders/out-macys-productname.txt
+
+2017.11/10 edited
 (..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)
 (..)             Crawling Analysis                      (..)
 (..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)(..)
